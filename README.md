@@ -24,7 +24,7 @@ To run the project on your local machine, follow the steps below:
 1. Make sure you have Android Studio installed on your machine.
 2. Clone this repository using the git command:
    ```
-   git clone https://github.com/eduardomcb/ifood-clone.git
+   git clone https://github.com/eduardomcb/iFoodClone.git
    ```
 3. Open Android Studio and import the project.
 4. Wait for Android Studio to configure the dependencies and sync the project.
