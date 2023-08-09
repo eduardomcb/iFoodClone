@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/iFoodCloneButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                android:text="@string/address"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingHorizontal="16dp"
+                android:src="@drawable/baseline_qr_code_scanner_24" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/add_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/red"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="1dp"
+            app:tabMode="auto"
+            app:tabSelectedTextColor="@color/red"
+            app:tabTextAppearance="@style/iFoodCloneTabTextAppearance"
+            app:tabTextColor="@color/gray" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/add_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        app:contentPadding="15dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/explore_more" />
+
+        <TextView
+            android:layout_gravity="center|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter"
+            android:textColor="@color/red"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
